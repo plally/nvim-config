@@ -94,4 +94,14 @@ require('packer').startup(function(use)
             require("barbecue").setup()
         end,
     })
+    use("leafo/moonscript-vim")
+    use {
+        "ray-x/go.nvim",
+        requires = {
+            'ray-x/guihua.lua'
+        },
+        config = function()
+            require("go").setup()
+        end
+    }   
 end)
