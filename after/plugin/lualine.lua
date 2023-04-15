@@ -9,7 +9,7 @@ require('lualine').setup {
             { 'mode', separator = { left = '' }, right_padding = 2 },
         },
         lualine_b = { 'filename', 'branch' },
-        lualine_c = { "fileformat", "diagnostics"},
+        lualine_c = { "fileformat", "diagnostics" },
         lualine_x = {},
         lualine_y = { 'filetype', 'progress' },
         lualine_z = {
@@ -18,12 +18,12 @@ require('lualine').setup {
     },
     tabline = {
         lualine_a = {
-            { function() return '🦊' end, separator = { left = '' }},
+            { function() return '🦊' end, separator = { left = '' } },
         },
         lualine_b = {
-            {'buffers'}
+            { 'buffers' }
         },
-        lualine_c ={},
+        lualine_c = {},
         lualine_x = {},
         lualine_y = {},
         lualine_z = {}
