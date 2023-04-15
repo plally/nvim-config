@@ -20,10 +20,10 @@ vim.cmd.colorscheme "catppuccin"
 require("nvim-tree").setup()
 
 vim.api.nvim_create_user_command('Tree',
-  function(opts)
-    vim.cmd.NvimTreeFocus()
-  end,
-  { nargs = 0 }
+    function(opts)
+        vim.cmd.NvimTreeFocus()
+    end,
+    { nargs = 0 }
 )
 
 require("remap")

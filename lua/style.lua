@@ -1,3 +1,3 @@
 require("catppuccin").setup({
-    no_italic=true
+    no_italic = true
 })

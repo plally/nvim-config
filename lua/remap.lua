@@ -7,5 +7,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<leader>d", function()
     vim.diagnostic.open_float()
 end)
-vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-vim.g.copilot_no_tab_map = true
+
+vim.keymap.set('n', '<leader>th', '<cmd>bp<CR>')
+vim.keymap.set('n', '<leader>tl', '<cmd>bn<CR>')
