@@ -1,6 +1,4 @@
-local lsp = require("lsp-zero")
-
-lsp.configure("gopls", {
+require("lspconfig").gopls.setup({
     settings = {
         gopls = {
             staticcheck = true,

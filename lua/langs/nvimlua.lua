@@ -1,2 +1,2 @@
 local lsp = require("lsp-zero")
-lsp.nvim_workspace()
+require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())

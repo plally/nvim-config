@@ -1,6 +1,4 @@
-local lsp = require("lsp-zero")
-
-lsp.configure("lua_ls", {
+require("lspconfig").lua_ls.setup({
     settings = {
         Lua = {
             workspace = {
