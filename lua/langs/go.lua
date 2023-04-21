@@ -1,6 +1,6 @@
 local lsp = require("lsp-zero")
 
-lsp.configure('gopls', {
+lsp.configure("gopls", {
     settings = {
         gopls = {
             staticcheck = true,
@@ -23,10 +23,10 @@ lsp.configure('gopls', {
     }
 })
 
-vim.api.nvim_create_autocmd('BufWritePre', {
-    pattern = '*.go',
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*.go",
     callback = function()
-        vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+        vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })
     end
 })
 
