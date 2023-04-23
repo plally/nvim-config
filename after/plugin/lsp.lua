@@ -18,6 +18,13 @@ lsp.format_on_save({
     }
 })
 
+lsp.set_sign_icons({
+    error = "✘",
+    warn = "▲",
+    hint = "⚑",
+    info = ""
+})
+
 if vim.fn.expand("$HOME/.config/nvim") == vim.fn.getcwd() then
     require("langs.nvimlua")
 elseif vim.fn.isdirectory("lua/autorun") == 1 then

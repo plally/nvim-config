@@ -3,7 +3,7 @@ require("lspconfig").lua_ls.setup({
         Lua = {
             workspace = {
                 library = {
-                    "/home/pierce/LuaAddons/glua/"
+                    vim.fn.expand("$HOME/LuaLibs/glua/")
                 }
             },
             format = {
@@ -17,6 +17,7 @@ require("lspconfig").lua_ls.setup({
                     insert_final_newline = "true",
                     space_inside_function_call_parentheses = "true",
                     space_inside_function_param_list_parentheses = "true",
+                    align_continuous_inline_comment = "false",
                 },
             },
             runtime = {
@@ -28,3 +29,5 @@ require("lspconfig").lua_ls.setup({
         }
     }
 })
+
+vim.fn.jobstart("git pull origin master", { cwd = vim.fn.expand("$HOME/LuaLibs/glua") })
